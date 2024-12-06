@@ -1,0 +1,7 @@
+public class Argumento {
+  public static void main(String args[]) {
+    System.out.println("Nome: "+ args[2]);
+    System.out.println("Telefone: "+ args[1]);
+    System.out.println("Email: "+ args[0]);
+  }
+}
