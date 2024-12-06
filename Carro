@@ -1,0 +1,37 @@
+//criar classe
+public class Carro{
+
+//criar atributos
+  	String modelo;
+  	String cor;
+  	int ano;
+
+//criar método construtor
+  public Carro(String modelo, String cor, int ano) {
+	this.modelo = modelo;
+	this.cor = cor;
+	this.ano = ano;
+  }
+
+//criar método para exibir informações
+  public void exibirInformacoes() {
+	System.out.println("Modelo: " + modelo);
+	System.out.println("Cor: " + cor);
+	System.out.println("Ano: " + ano);
+  }
+
+//criar função principal e objetos
+  public static void main(String[] args) {
+	Carro primeiroCarro = new Carro("Gol", "branco", 1995);
+	Carro segundoCarro = new Carro("Uno", "vermelho", 2000);
+	Carro terceiroCarro = new Carro("Sandero", "preto", 2020);
+	Carro quartocarro = new Carro("IX-35", "vinho", 2023);
+
+//chamar as funções dos objetos para exibir informações
+	primeiroCarro.exibirInformacoes();
+	segundoCarro.exibirInformacoes();
+	terceiroCarro.exibirInformacoes();
+	quartocarro.exibirInformacoes();
+  }
+
+}
